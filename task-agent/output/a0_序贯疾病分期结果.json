@@ -1,0 +1,808 @@
+{
+  "model": "本地序贯事件异常模型 + Metropolis-Hastings MCMC（SuperCare 实现）",
+  "staging_paradigm": "每个生物标志物对应一个序贯事件异常模型；横轴分期、纵轴水平的 n 条进展曲线",
+  "event_features": [
+    "cognitive_inverse",
+    "moca_inverse",
+    "npi_total",
+    "adl_dependence"
+  ],
+  "stage_count": 5,
+  "subtype_count": 3,
+  "cohort_size": 10,
+  "focus_case_id": "ms_chen",
+  "focus_case_staging": {
+    "case_id": "ms_chen",
+    "folder_name": "陈女士",
+    "is_focus_case": true,
+    "latest_biomarkers": {
+      "cognitive_inverse": 94.0,
+      "moca_inverse": 99.0,
+      "npi_total": 9.0,
+      "adl_dependence": 25.0
+    },
+    "biomarker_zscores": {
+      "cognitive_inverse": 0.4009,
+      "moca_inverse": 1.2127,
+      "npi_total": -0.635,
+      "adl_dependence": -0.1621
+    },
+    "disease_subtype": 1,
+    "disease_stage": 4,
+    "disease_stage_label": "中重度期",
+    "event_order": [
+      "cognitive_inverse",
+      "moca_inverse",
+      "npi_total",
+      "adl_dependence"
+    ],
+    "events_reached": [
+      "cognitive_inverse",
+      "moca_inverse",
+      "npi_total"
+    ],
+    "events_pending": [
+      "adl_dependence"
+    ],
+    "sequential_event_count": 3,
+    "sequential_event_total": 4,
+    "event_status": {
+      "cognitive_inverse": {
+        "triggered": true,
+        "expected_at_patient_stage": 95.8096,
+        "onset_stage": 1.6749999999999998
+      },
+      "moca_inverse": {
+        "triggered": true,
+        "expected_at_patient_stage": 97.5696,
+        "onset_stage": 2.625
+      },
+      "npi_total": {
+        "triggered": true,
+        "expected_at_patient_stage": 17.2103,
+        "onset_stage": 3.575
+      },
+      "adl_dependence": {
+        "triggered": false,
+        "expected_at_patient_stage": 19.2515,
+        "onset_stage": 4.5249999999999995
+      }
+    },
+    "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+  },
+  "cases": [
+    {
+      "case_id": "linbaoyu",
+      "folder_name": "凌女士",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 96.0,
+        "moca_inverse": 98.0,
+        "npi_total": 3.0,
+        "adl_dependence": 90.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": 0.8463,
+        "moca_inverse": 0.7276,
+        "npi_total": -1.1054,
+        "adl_dependence": 2.4718
+      },
+      "disease_subtype": 2,
+      "disease_stage": 5,
+      "disease_stage_label": "重度/高依赖期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_pending": [],
+      "sequential_event_count": 4,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 21.9165,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 95.8233,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 97.5982,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": true,
+          "expected_at_patient_stage": 30.2492,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "songshucheng",
+      "folder_name": "宋先生",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 89.0,
+        "moca_inverse": 94.0,
+        "npi_total": 21.0,
+        "adl_dependence": 25.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": -0.7127,
+        "moca_inverse": -1.2127,
+        "npi_total": 0.3058,
+        "adl_dependence": -0.1621
+      },
+      "disease_subtype": 2,
+      "disease_stage": 2,
+      "disease_stage_label": "轻度进展期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total"
+      ],
+      "events_pending": [
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "sequential_event_count": 1,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 16.7144,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 90.936,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 94.3257,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 10.6043,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "zhuangfushun",
+      "folder_name": "庄先生",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 84.0,
+        "moca_inverse": 97.0,
+        "npi_total": 49.0,
+        "adl_dependence": 0.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": -1.8263,
+        "moca_inverse": 0.2425,
+        "npi_total": 2.501,
+        "adl_dependence": -1.1751
+      },
+      "disease_subtype": 2,
+      "disease_stage": 3,
+      "disease_stage_label": "中度进展期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse"
+      ],
+      "events_pending": [
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "sequential_event_count": 2,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 20.3869,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 93.4825,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 95.1689,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 12.6212,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "liangdexin",
+      "folder_name": "梁女士",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 86.0,
+        "moca_inverse": 94.0,
+        "npi_total": 3.0,
+        "adl_dependence": 0.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": -1.3808,
+        "moca_inverse": -1.2127,
+        "npi_total": -1.1054,
+        "adl_dependence": -1.1751
+      },
+      "disease_subtype": 2,
+      "disease_stage": 1,
+      "disease_stage_label": "早期（亚临床/轻度）",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [],
+      "events_pending": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "sequential_event_count": 0,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": false,
+          "expected_at_patient_stage": 11.6603,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 89.531,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 94.0747,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 10.1318,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "yinchunhua",
+      "folder_name": "殷女士",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 97.0,
+        "moca_inverse": 98.0,
+        "npi_total": 8.0,
+        "adl_dependence": 40.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": 1.069,
+        "moca_inverse": 0.7276,
+        "npi_total": -0.7134,
+        "adl_dependence": 0.4457
+      },
+      "disease_subtype": 2,
+      "disease_stage": 4,
+      "disease_stage_label": "中重度期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse"
+      ],
+      "events_pending": [
+        "adl_dependence"
+      ],
+      "sequential_event_count": 3,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 21.6192,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 95.2467,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 96.6315,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 19.2515,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "jiangsu",
+      "folder_name": "江女士",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 98.0,
+        "moca_inverse": 93.0,
+        "npi_total": 22.0,
+        "adl_dependence": 40.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": 1.2918,
+        "moca_inverse": -1.6977,
+        "npi_total": 0.3842,
+        "adl_dependence": 0.4457
+      },
+      "disease_subtype": 2,
+      "disease_stage": 3,
+      "disease_stage_label": "中度进展期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse"
+      ],
+      "events_pending": [
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "sequential_event_count": 2,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 20.3869,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 93.4825,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 95.1689,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 12.6212,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "qiuaifang",
+      "folder_name": "裘女士",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 90.0,
+        "moca_inverse": 96.0,
+        "npi_total": 17.0,
+        "adl_dependence": 35.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": -0.49,
+        "moca_inverse": -0.2425,
+        "npi_total": -0.0078,
+        "adl_dependence": 0.2431
+      },
+      "disease_subtype": 2,
+      "disease_stage": 3,
+      "disease_stage_label": "中度进展期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse"
+      ],
+      "events_pending": [
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "sequential_event_count": 2,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 20.3869,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 93.4825,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 95.1689,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 12.6212,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "chenruqin",
+      "folder_name": "陈阿姨",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": null,
+        "moca_inverse": null,
+        "npi_total": null,
+        "adl_dependence": null
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": 0.4009,
+        "moca_inverse": 0.2425,
+        "npi_total": -0.0078,
+        "adl_dependence": -0.1621
+      },
+      "disease_subtype": 2,
+      "disease_stage": 3,
+      "disease_stage_label": "中度进展期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse"
+      ],
+      "events_pending": [
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "sequential_event_count": 2,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 20.3869,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 93.4825,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": false,
+          "expected_at_patient_stage": 95.1689,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 12.6212,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "ms_chen",
+      "folder_name": "陈女士",
+      "is_focus_case": true,
+      "latest_biomarkers": {
+        "cognitive_inverse": 94.0,
+        "moca_inverse": 99.0,
+        "npi_total": 9.0,
+        "adl_dependence": 25.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": 0.4009,
+        "moca_inverse": 1.2127,
+        "npi_total": -0.635,
+        "adl_dependence": -0.1621
+      },
+      "disease_subtype": 1,
+      "disease_stage": 4,
+      "disease_stage_label": "中重度期",
+      "event_order": [
+        "cognitive_inverse",
+        "moca_inverse",
+        "npi_total",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "cognitive_inverse",
+        "moca_inverse",
+        "npi_total"
+      ],
+      "events_pending": [
+        "adl_dependence"
+      ],
+      "sequential_event_count": 3,
+      "sequential_event_total": 4,
+      "event_status": {
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 95.8096,
+          "onset_stage": 1.6749999999999998
+        },
+        "moca_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 97.5696,
+          "onset_stage": 2.625
+        },
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 17.2103,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 19.2515,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    },
+    {
+      "case_id": "huangyoudi",
+      "folder_name": "黄女士",
+      "is_focus_case": false,
+      "latest_biomarkers": {
+        "cognitive_inverse": 94.0,
+        "moca_inverse": 99.0,
+        "npi_total": 22.0,
+        "adl_dependence": 10.0
+      },
+      "biomarker_zscores": {
+        "cognitive_inverse": 0.4009,
+        "moca_inverse": 1.2127,
+        "npi_total": 0.3842,
+        "adl_dependence": -0.7699
+      },
+      "disease_subtype": 2,
+      "disease_stage": 4,
+      "disease_stage_label": "中重度期",
+      "event_order": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse",
+        "adl_dependence"
+      ],
+      "events_reached": [
+        "npi_total",
+        "cognitive_inverse",
+        "moca_inverse"
+      ],
+      "events_pending": [
+        "adl_dependence"
+      ],
+      "sequential_event_count": 3,
+      "sequential_event_total": 4,
+      "event_status": {
+        "npi_total": {
+          "triggered": true,
+          "expected_at_patient_stage": 21.6192,
+          "onset_stage": 1.6749999999999998
+        },
+        "cognitive_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 95.2467,
+          "onset_stage": 2.625
+        },
+        "moca_inverse": {
+          "triggered": true,
+          "expected_at_patient_stage": 96.6315,
+          "onset_stage": 3.575
+        },
+        "adl_dependence": {
+          "triggered": false,
+          "expected_at_patient_stage": 19.2515,
+          "onset_stage": 4.5249999999999995
+        }
+      },
+      "staging_inference": "每标志物一个序贯事件异常模型，MCMC 推断共同分期与亚型"
+    }
+  ],
+  "mcmc_diagnostics": {
+    "iterations": 8000,
+    "burn_in": 2000,
+    "acceptance_rate": 0.8945,
+    "method": "Metropolis-Hastings MCMC"
+  },
+  "progression_curves": {
+    "subtype": 1,
+    "event_order": [
+      "cognitive_inverse",
+      "moca_inverse",
+      "npi_total",
+      "adl_dependence"
+    ],
+    "curves": [
+      {
+        "feature": "cognitive_inverse",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          90.8301,
+          93.3572,
+          95.1934,
+          95.8096,
+          95.9582
+        ],
+        "empirical_means": [
+          86.0,
+          89.0,
+          90.6667,
+          95.0,
+          96.0
+        ],
+        "event_model": {
+          "baseline": 89.0,
+          "abnormal_level": 96.0,
+          "onset_stage": 1.6749999999999998,
+          "width": 0.65
+        }
+      },
+      {
+        "feature": "moca_inverse",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          94.3034,
+          95.1063,
+          96.5614,
+          97.5696,
+          97.899
+        ],
+        "empirical_means": [
+          94.0,
+          94.0,
+          95.3333,
+          98.6667,
+          98.0
+        ],
+        "event_model": {
+          "baseline": 94.0,
+          "abnormal_level": 98.0,
+          "onset_stage": 2.625,
+          "width": 0.65
+        }
+      },
+      {
+        "feature": "npi_total",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          8.2615,
+          9.14,
+          12.0911,
+          17.2103,
+          20.5938
+        ],
+        "empirical_means": [
+          3.0,
+          21.0,
+          29.3333,
+          13.0,
+          3.0
+        ],
+        "event_model": {
+          "baseline": 8.0,
+          "abnormal_level": 22.0,
+          "onset_stage": 3.575,
+          "width": 0.65
+        }
+      },
+      {
+        "feature": "adl_dependence",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          10.1318,
+          10.6043,
+          12.6212,
+          19.2515,
+          30.2492
+        ],
+        "empirical_means": [
+          0.0,
+          25.0,
+          25.0,
+          25.0,
+          90.0
+        ],
+        "event_model": {
+          "baseline": 10.0,
+          "abnormal_level": 40.0,
+          "onset_stage": 4.5249999999999995,
+          "width": 0.65
+        }
+      }
+    ],
+    "axis_x": "疾病分期 (1-5)",
+    "axis_y": "生物标志物水平（原始单位）"
+  },
+  "gp_care_implications": {
+    "stage": 4,
+    "subtype": 1,
+    "monitoring_intensity": "加强",
+    "bpsd_prevention_priority": "高"
+  }
+}

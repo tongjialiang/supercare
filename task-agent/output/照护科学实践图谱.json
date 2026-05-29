@@ -1,0 +1,554 @@
+{
+  "title": "照护科学实践图谱：基于三核心智能体的非药物干预与风险协同机制",
+  "summary": "本图谱从A1-A14系列实践报告中抽象出可复用的照护科学知识命题与协同逻辑，聚焦超级照护员、超级护士、超级全科医师三大核心智能体的分工协作。图谱提炼了以'舞蹈偏好'为切入点的非药物干预设计方法、BPSD行为升级阈值、跌倒防护双轨机制、家属焦虑结构化沟通等隐性知识，并构建风险—干预—质控闭环。成果可支持科研人员解构多学科照护流程、验证干预有效性边界，并为行业标准制定提供证据基底。",
+  "nodes": [
+    {
+      "id": "CORE_A1_SUPER_CAREGIVER",
+      "label": "超级照护员（A1协作中枢）",
+      "category": "核心智能体"
+    },
+    {
+      "id": "CORE_A2_SUPER_NURSE",
+      "label": "超级护士（A2协作中枢）",
+      "category": "核心智能体"
+    },
+    {
+      "id": "CORE_A3_SUPER_GP",
+      "label": "超级全科医师-GP（A3协作中枢）",
+      "category": "核心智能体"
+    },
+    {
+      "id": "METH_NONPHARM_INTERV_DESIGN",
+      "label": "非药物干预个性化设计方法论",
+      "category": "文档产出"
+    },
+    {
+      "id": "METH_FALL_PREVENTION_DUAL",
+      "label": "跌倒风险环境-行为双轨防控",
+      "category": "文档产出"
+    },
+    {
+      "id": "METH_FAMILY_ANXIETY_STRUCT",
+      "label": "家属焦虑结构化沟通机制",
+      "category": "文档产出"
+    },
+    {
+      "id": "PROP_DANCE_AS_REHAB_SUBSTITUTE",
+      "label": "舞蹈活动替代传统康复训练",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "PROP_BPSD_TRIGGER_MORNING",
+      "label": "晨间10-11点为BPSD高发窗口",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "PROP_COMPLIANCE_VIA_INTEREST",
+      "label": "依从性提升依赖兴趣锚定而非指令",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "PROP_BATHING_FALL_RISK_PEAK",
+      "label": "洗澡环节为跌倒最高风险场景",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "PROP_NPI_ADJ_CORRELATES",
+      "label": "NPI评分下降与ADL提升呈正相关",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "PROP_FAMILY_FEEDBACK_LOOP",
+      "label": "家属晚间反馈强化服药依从性",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "PROP_NO_PHYSICAL_RESTRAINT",
+      "label": "仅环境引导，禁用身体约束",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "TOOL_DISCHARGE_SUMMARY_PKG",
+      "label": "出院摘要结构化包（A4）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_ECR_STATUS_COMPARISON",
+      "label": "ECR状态对比报告（A5）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_READAPT_TASK_PKG",
+      "label": "返院适应期专项任务包（A6）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_BPSD_INCIDENT_REPORT",
+      "label": "BPSD事件报告（A7）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_BPSD_RESPONSE_GUIDE",
+      "label": "BPSD事件处理建议（A8）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_WEEKLY_CAREGIVER_TASKS",
+      "label": "照护员周重点任务（A9）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_TRIPOINT_FUNCTION_CHART",
+      "label": "三时点功能对比图（A10）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_WEEKLY_INTEGRATED_REPORT",
+      "label": "返院一周综合报告（A11）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_PSYCH_REMOTE_CONSULT",
+      "label": "精神科远程会诊记录（A12）",
+      "category": "文档产出"
+    },
+    {
+      "id": "TOOL_D30_STABILIZATION",
+      "label": "D30再稳定评估报告（A13）",
+      "category": "文档产出"
+    },
+    {
+      "id": "FLOW_DISCHARGE_TO_READAPT",
+      "label": "出院→返院适应期承接流程",
+      "category": "照护流程"
+    },
+    {
+      "id": "FLOW_BPSD_EVENT_RESPONSE",
+      "label": "BPSD事件响应标准化流程",
+      "category": "照护流程"
+    },
+    {
+      "id": "FLOW_MEDICATION_VERIFICATION",
+      "label": "每日两次用药核查流程",
+      "category": "照护流程"
+    },
+    {
+      "id": "FLOW_MORNING_FALL_PATROL",
+      "label": "晨间防跌倒巡视流程",
+      "category": "照护流程"
+    },
+    {
+      "id": "FLOW_DANCE_INTERVENTION_EXEC",
+      "label": "舞蹈认知干预执行流程",
+      "category": "照护流程"
+    },
+    {
+      "id": "RISK_FALL_HIGH_DUE_TO_PACEMAKER",
+      "label": "起搏器+失智叠加跌倒高风险",
+      "category": "风险要素"
+    },
+    {
+      "id": "RISK_BPSD_REHAB_REFUSAL",
+      "label": "BPSD导致康复拒绝",
+      "category": "风险要素"
+    },
+    {
+      "id": "RISK_FAMILY_ANXIETY_ESCALATION",
+      "label": "家属焦虑加剧照护难度",
+      "category": "风险要素"
+    },
+    {
+      "id": "RISK_MORNING_TRAINING_STRESS",
+      "label": "晨间集体训练诱发压力反应",
+      "category": "风险要素"
+    },
+    {
+      "id": "INTERV_DANCE_BASED_ACTIVITY",
+      "label": "基于舞蹈的认知-体能融合活动",
+      "category": "干预措施"
+    },
+    {
+      "id": "INTERV_MUSIC_EMOTION_REGULATION",
+      "label": "音乐引导情绪快速缓解",
+      "category": "干预措施"
+    },
+    {
+      "id": "INTERV_BATHING_SAFETY_PROTOCOL",
+      "label": "洗澡安全双人协助协议",
+      "category": "干预措施"
+    },
+    {
+      "id": "INTERV_FAMILY_PARTICIPATORY_COMM",
+      "label": "参与式家属沟通策略",
+      "category": "干预措施"
+    },
+    {
+      "id": "ASSESS_NPI_SCORE_TREND",
+      "label": "NPI评分动态趋势评估",
+      "category": "评估维度"
+    },
+    {
+      "id": "ASSESS_ADL_SCORE_TREND",
+      "label": "ADL评分动态趋势评估",
+      "category": "评估维度"
+    },
+    {
+      "id": "ASSESS_SLEEP_CONTINUITY",
+      "label": "睡眠连续性（夜醒频次）",
+      "category": "评估维度"
+    },
+    {
+      "id": "ASSESS_MEDICATION_ADHERENCE",
+      "label": "规律服药依从性评估",
+      "category": "评估维度"
+    },
+    {
+      "id": "COORD_GP_NURSE_CAREGIVER_TRIAD",
+      "label": "GP-护士-照护员三方协同接口",
+      "category": "协同机制"
+    },
+    {
+      "id": "COORD_PSYCH_CONSULT_TRIGGER",
+      "label": "精神科会诊触发协同机制",
+      "category": "协同机制"
+    },
+    {
+      "id": "COORD_FAMILY_SUPPORT_INTEGRATION",
+      "label": "家属支持纳入照护协同链",
+      "category": "协同机制"
+    },
+    {
+      "id": "QC_BPSD_UPGRADE_THRESHOLD",
+      "label": "BPSD事件24h≥2次升级阈值",
+      "category": "制度与质控"
+    },
+    {
+      "id": "QC_NO_SPECULATION_POLICY",
+      "label": "无依据字段强制留空制度",
+      "category": "制度与质控"
+    },
+    {
+      "id": "QC_DAILY_BEHAVIOR_LOGGING",
+      "label": "照护行为关键指标日志规范",
+      "category": "制度与质控"
+    },
+    {
+      "id": "KNOWLEDGE_DANCE_TASK_SPLITTING",
+      "label": "舞蹈任务拆分降低认知负荷",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "KNOWLEDGE_ENV_FAMILIARITY_INTERV",
+      "label": "环境熟悉化干预提升适应性",
+      "category": "行业知识命题"
+    },
+    {
+      "id": "KNOWLEDGE_SHORT_GROUP_INTERACTION",
+      "label": "短时小组互动避免社交过载",
+      "category": "行业知识命题"
+    }
+  ],
+  "edges": [
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "METH_NONPHARM_INTERV_DESIGN",
+      "relation": "主导实施"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "METH_FALL_PREVENTION_DUAL",
+      "relation": "执行落地"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "METH_FAMILY_ANXIETY_STRUCT",
+      "relation": "一线沟通"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "PROP_DANCE_AS_REHAB_SUBSTITUTE",
+      "relation": "实践验证"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "PROP_COMPLIANCE_VIA_INTEREST",
+      "relation": "行为转化"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "INTERV_DANCE_BASED_ACTIVITY",
+      "relation": "直接执行"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "INTERV_MUSIC_EMOTION_REGULATION",
+      "relation": "现场应用"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "FLOW_DANCE_INTERVENTION_EXEC",
+      "relation": "流程承载"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "FLOW_MORNING_FALL_PATROL",
+      "relation": "每日执行"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "TOOL_BPSD_INCIDENT_REPORT",
+      "relation": "原始记录提供"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "TOOL_WEEKLY_CAREGIVER_TASKS",
+      "relation": "任务接收方"
+    },
+    {
+      "source": "CORE_A1_SUPER_CAREGIVER",
+      "target": "COORD_GP_NURSE_CAREGIVER_TRIAD",
+      "relation": "协作节点"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "METH_FALL_PREVENTION_DUAL",
+      "relation": "方案制定"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "METH_NONPHARM_INTERV_DESIGN",
+      "relation": "临床适配"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "PROP_BATHING_FALL_RISK_PEAK",
+      "relation": "风险识别"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "PROP_NPI_ADJ_CORRELATES",
+      "relation": "数据关联分析"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "ASSESS_NPI_SCORE_TREND",
+      "relation": "专业评估"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "ASSESS_ADL_SCORE_TREND",
+      "relation": "功能评估"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "INTERV_BATHING_SAFETY_PROTOCOL",
+      "relation": "规范制定"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "FLOW_BPSD_EVENT_RESPONSE",
+      "relation": "流程监督"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "TOOL_ECR_STATUS_COMPARISON",
+      "relation": "数据整合"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "TOOL_READAPT_TASK_PKG",
+      "relation": "任务包生成"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "TOOL_BPSD_RESPONSE_GUIDE",
+      "relation": "处置建议输出"
+    },
+    {
+      "source": "CORE_A2_SUPER_NURSE",
+      "target": "COORD_PSYCH_CONSULT_TRIGGER",
+      "relation": "会诊发起"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "METH_FAMILY_ANXIETY_STRUCT",
+      "relation": "医疗协调支持"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "PROP_FAMILY_FEEDBACK_LOOP",
+      "relation": "医嘱设计依据"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "ASSESS_MEDICATION_ADHERENCE",
+      "relation": "慢病管理核心"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "QC_BPSD_UPGRADE_THRESHOLD",
+      "relation": "阈值确认"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "TOOL_DISCHARGE_SUMMARY_PKG",
+      "relation": "医嘱审核"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "TOOL_PSYCH_REMOTE_CONSULT",
+      "relation": "多学科协调"
+    },
+    {
+      "source": "CORE_A3_SUPER_GP",
+      "target": "COORD_GP_NURSE_CAREGIVER_TRIAD",
+      "relation": "中枢统筹"
+    },
+    {
+      "source": "TOOL_DISCHARGE_SUMMARY_PKG",
+      "target": "TOOL_ECR_STATUS_COMPARISON",
+      "relation": "提供出院基准数据"
+    },
+    {
+      "source": "TOOL_ECR_STATUS_COMPARISON",
+      "target": "TOOL_READAPT_TASK_PKG",
+      "relation": "驱动任务包生成"
+    },
+    {
+      "source": "TOOL_READAPT_TASK_PKG",
+      "target": "TOOL_WEEKLY_CAREGIVER_TASKS",
+      "relation": "细化周任务"
+    },
+    {
+      "source": "TOOL_BPSD_INCIDENT_REPORT",
+      "target": "TOOL_BPSD_RESPONSE_GUIDE",
+      "relation": "触发处理建议"
+    },
+    {
+      "source": "TOOL_BPSD_RESPONSE_GUIDE",
+      "target": "FLOW_BPSD_EVENT_RESPONSE",
+      "relation": "固化响应流程"
+    },
+    {
+      "source": "TOOL_WEEKLY_INTEGRATED_REPORT",
+      "target": "TOOL_PSYCH_REMOTE_CONSULT",
+      "relation": "提供会诊依据"
+    },
+    {
+      "source": "TOOL_PSYCH_REMOTE_CONSULT",
+      "target": "KNOWLEDGE_DANCE_TASK_SPLITTING",
+      "relation": "产出干预知识"
+    },
+    {
+      "source": "TOOL_PSYCH_REMOTE_CONSULT",
+      "target": "KNOWLEDGE_SHORT_GROUP_INTERACTION",
+      "relation": "产出社交干预知识"
+    },
+    {
+      "source": "TOOL_D30_STABILIZATION",
+      "target": "PROP_DANCE_AS_REHAB_SUBSTITUTE",
+      "relation": "验证长期有效性"
+    },
+    {
+      "source": "TOOL_TRIPOINT_FUNCTION_CHART",
+      "target": "PROP_NPI_ADJ_CORRELATES",
+      "relation": "可视化趋势支撑"
+    },
+    {
+      "source": "RISK_FALL_HIGH_DUE_TO_PACEMAKER",
+      "target": "METH_FALL_PREVENTION_DUAL",
+      "relation": "风险驱动方法"
+    },
+    {
+      "source": "RISK_BPSD_REHAB_REFUSAL",
+      "target": "PROP_DANCE_AS_REHAB_SUBSTITUTE",
+      "relation": "矛盾转化契机"
+    },
+    {
+      "source": "RISK_FAMILY_ANXIETY_ESCALATION",
+      "target": "METH_FAMILY_ANXIETY_STRUCT",
+      "relation": "问题导向设计"
+    },
+    {
+      "source": "RISK_MORNING_TRAINING_STRESS",
+      "target": "PROP_BPSD_TRIGGER_MORNING",
+      "relation": "情境诱因识别"
+    },
+    {
+      "source": "INTERV_DANCE_BASED_ACTIVITY",
+      "target": "KNOWLEDGE_DANCE_TASK_SPLITTING",
+      "relation": "操作细化"
+    },
+    {
+      "source": "INTERV_DANCE_BASED_ACTIVITY",
+      "target": "KNOWLEDGE_ENV_FAMILIARITY_INTERV",
+      "relation": "环境适配"
+    },
+    {
+      "source": "ASSESS_SLEEP_CONTINUITY",
+      "target": "PROP_BPSD_TRIGGER_MORNING",
+      "relation": "睡眠不足为前驱因素"
+    },
+    {
+      "source": "COORD_FAMILY_SUPPORT_INTEGRATION",
+      "target": "PROP_FAMILY_FEEDBACK_LOOP",
+      "relation": "机制实现路径"
+    },
+    {
+      "source": "QC_NO_SPECULATION_POLICY",
+      "target": "TOOL_DISCHARGE_SUMMARY_PKG",
+      "relation": "字段留空约束"
+    },
+    {
+      "source": "QC_DAILY_BEHAVIOR_LOGGING",
+      "target": "TOOL_BPSD_INCIDENT_REPORT",
+      "relation": "日志规范依据"
+    },
+    {
+      "source": "FLOW_DISCHARGE_TO_READAPT",
+      "target": "TOOL_READAPT_TASK_PKG",
+      "relation": "流程产出物"
+    },
+    {
+      "source": "FLOW_MEDICATION_VERIFICATION",
+      "target": "ASSESS_MEDICATION_ADHERENCE",
+      "relation": "执行支撑评估"
+    },
+    {
+      "source": "PROP_NO_PHYSICAL_RESTRAINT",
+      "target": "FLOW_BPSD_EVENT_RESPONSE",
+      "relation": "约束禁令嵌入"
+    },
+    {
+      "source": "KNOWLEDGE_ENV_FAMILIARITY_INTERV",
+      "target": "PROP_COMPLIANCE_VIA_INTEREST",
+      "relation": "环境与兴趣协同"
+    }
+  ],
+  "_meta": {
+    "说明": "照护科学实践图谱：由 TaskAgent A1-A14 实践 PDF 凝练；以超级照护员、超级护士、超级 GP 为三认知核心，服务照护科学行业知识积累",
+    "三核心节点": [
+      "CORE_A1_SUPER_CAREGIVER",
+      "CORE_A2_SUPER_NURSE",
+      "CORE_A3_SUPER_GP"
+    ],
+    "来源PDF": [
+      "a1_照护员协作专业答复.pdf",
+      "a2_护士协作专业答复.pdf",
+      "a3_GP协作专业答复.pdf",
+      "a4_出院摘要结构化包.pdf",
+      "a5_ECR状态对比报告.pdf",
+      "a6_返院适应期专项任务包.pdf",
+      "a7_BPSD事件报告.pdf",
+      "a8_BPSD事件处理建议.pdf",
+      "a9_护士评估结论与调整建议.pdf",
+      "a9_照护员周重点任务.pdf",
+      "a10_三时点功能对比图.pdf",
+      "a11_返院一周综合报告.pdf",
+      "a12_精神科远程会诊记录.pdf",
+      "a13_D30再稳定评估报告.pdf",
+      "a13_照护成效中期报告.pdf",
+      "a14_TaskAgent审计评估报告.pdf"
+    ]
+  }
+}

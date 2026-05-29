@@ -1,0 +1,4 @@
+# 中文字体体积较大，由 generate_practice_knowledge_graph.py 首次运行时下载，勿提交仓库
+*.otf
+*.ttf
+*.ttc

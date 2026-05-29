@@ -1,0 +1,8 @@
+openpyxl
+langgraph
+pillow
+reportlab
+pypinyin
+mineru
+openai
+json-repair

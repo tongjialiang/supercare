@@ -1,0 +1,142 @@
+{
+  "focus_case_id": "ms_chen",
+  "progression_curves": {
+    "subtype": 1,
+    "event_order": [
+      "cognitive_inverse",
+      "moca_inverse",
+      "npi_total",
+      "adl_dependence"
+    ],
+    "curves": [
+      {
+        "feature": "cognitive_inverse",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          90.8301,
+          93.3572,
+          95.1934,
+          95.8096,
+          95.9582
+        ],
+        "empirical_means": [
+          86.0,
+          89.0,
+          90.6667,
+          95.0,
+          96.0
+        ],
+        "event_model": {
+          "baseline": 89.0,
+          "abnormal_level": 96.0,
+          "onset_stage": 1.6749999999999998,
+          "width": 0.65
+        }
+      },
+      {
+        "feature": "moca_inverse",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          94.3034,
+          95.1063,
+          96.5614,
+          97.5696,
+          97.899
+        ],
+        "empirical_means": [
+          94.0,
+          94.0,
+          95.3333,
+          98.6667,
+          98.0
+        ],
+        "event_model": {
+          "baseline": 94.0,
+          "abnormal_level": 98.0,
+          "onset_stage": 2.625,
+          "width": 0.65
+        }
+      },
+      {
+        "feature": "npi_total",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          8.2615,
+          9.14,
+          12.0911,
+          17.2103,
+          20.5938
+        ],
+        "empirical_means": [
+          3.0,
+          21.0,
+          29.3333,
+          13.0,
+          3.0
+        ],
+        "event_model": {
+          "baseline": 8.0,
+          "abnormal_level": 22.0,
+          "onset_stage": 3.575,
+          "width": 0.65
+        }
+      },
+      {
+        "feature": "adl_dependence",
+        "stages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "fitted_levels": [
+          10.1318,
+          10.6043,
+          12.6212,
+          19.2515,
+          30.2492
+        ],
+        "empirical_means": [
+          0.0,
+          25.0,
+          25.0,
+          25.0,
+          90.0
+        ],
+        "event_model": {
+          "baseline": 10.0,
+          "abnormal_level": 40.0,
+          "onset_stage": 4.5249999999999995,
+          "width": 0.65
+        }
+      }
+    ],
+    "axis_x": "疾病分期 (1-5)",
+    "axis_y": "生物标志物水平（原始单位）"
+  },
+  "mcmc_diagnostics": {
+    "iterations": 8000,
+    "burn_in": 2000,
+    "acceptance_rate": 0.8945,
+    "method": "Metropolis-Hastings MCMC"
+  }
+}

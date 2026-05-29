@@ -1,0 +1,106 @@
+{
+  "model": "贝叶斯风险融合（文献校准分期先验 + 标志物 z-score 似然）",
+  "runtime": "本地计算，无外部推理服务",
+  "focus_case_id": "ms_chen",
+  "disease_stage_prior": 4,
+  "prior_evidence": {
+    "hypothesis": "H = 未来 30 天内 BPSD 临床显著恶化（NPI 总分较基线升高 ≥4 分，或任一 NPI 分项乘积 ≥4，与 JAMA CHS 及多项试验入组标准一致）",
+    "formula": "P(H|stage) ≈ p_stage × λ_stage；p_stage 来自该期 BPSD/NPI 患病率文献，λ_stage 为月尺度症状新发或加重比例（由纵向队列启发式折算，非本机构队列 MLE）",
+    "stage": 4,
+    "stage_label": "中重度期",
+    "prior_bpsd_escalation_30d": 0.36,
+    "derivation": "中重度：Zhao AD 病程晚期仍常见激越/激惹；NPS 促进展 HR≈1.4；λ≈0.40 → P≈0.36",
+    "references": [
+      {
+        "id": "1",
+        "citation": "Lyketsos CG, et al. Prevalence of neuropsychiatric symptoms in dementia and MCI: results from the Cardiovascular Health Study. JAMA. 2002;288(12):1471-1478.",
+        "use": "MCI/轻度/中度痴呆分期 NPI 患病率分层"
+      },
+      {
+        "id": "2",
+        "citation": "Zhao Y, et al. Neuropsychiatric or BPSD: prevalence and natural history in AD. Front Neurol. 2022;13:832199.",
+        "use": "AD 病程 T0/T1 各 BPSD 患病率与激越/淡漠时序"
+      },
+      {
+        "id": "3",
+        "citation": "NeDEM Project. NPS in different stages of dementia in primary care. BMC Geriatrics. 2022;22:627.",
+        "use": "GDS 分期与 NPI 强度随疾病进展升高（轻–重约 +7.6 分）"
+      },
+      {
+        "id": "4",
+        "citation": "Ismail Z, et al. NPS in early AD and risk of progression to severe dementia. Transl Psychiatry. 2021;11:325.",
+        "use": "NPS 存在使 AD 进展至重度风险 HR≈1.4"
+      },
+      {
+        "id": "5",
+        "citation": "Aalten P, et al. Course of neuropsychiatric symptoms in dementia (MAASBED). Int J Geriatr Psychiatry. 2005;20(6):531-536.",
+        "use": "轻度痴呆基线 NPS 随时间增加；症状持续性"
+      },
+      {
+        "id": "6",
+        "citation": "中华医学会老年医学分会. 中国阿尔茨海默病痴呆诊疗指南（2020年版）. 中华老年医学杂志.",
+        "use": "数字分期 4–6 进行性认知障碍伴精神行为症状；中晚期行为症状突出"
+      }
+    ],
+    "source": "literature_calibrated"
+  },
+  "biomarker_zscores_used": {
+    "cognitive_inverse": 0.4009,
+    "moca_inverse": 1.2127,
+    "npi_total": -0.635,
+    "adl_dependence": -0.1621
+  },
+  "priors": {
+    "bpsd_escalation_30d": 0.36,
+    "stage_label": "中重度期",
+    "source": "literature_calibrated"
+  },
+  "likelihood_updates": [
+    {
+      "feature": "npi_total",
+      "zscore": -0.635,
+      "likelihood_ratio": 0.5735,
+      "interpretation": "优于队列均值，降低 BPSD 升级风险"
+    },
+    {
+      "feature": "cognitive_inverse",
+      "zscore": 0.4009,
+      "likelihood_ratio": 1.2935,
+      "interpretation": "差于或高于队列均值，推高 BPSD 升级风险"
+    },
+    {
+      "feature": "moca_inverse",
+      "zscore": 1.2127,
+      "likelihood_ratio": 1.9031,
+      "interpretation": "差于或高于队列均值，推高 BPSD 升级风险"
+    },
+    {
+      "feature": "adl_dependence",
+      "zscore": -0.1621,
+      "likelihood_ratio": 0.9364,
+      "interpretation": "优于队列均值，降低 BPSD 升级风险"
+    }
+  ],
+  "combined_likelihood_ratio": 1.322,
+  "posteriors": {
+    "bpsd_escalation_30d": 0.4265,
+    "fall_high_risk_30d": 0.5175,
+    "care_intensity_escalation": 0.704
+  },
+  "calculation_steps": {
+    "prior_odds": 0.5625,
+    "posterior_odds": 0.7436,
+    "formula": "odds(H|D) = odds(H) × ∏ LR_i；P(H|D) = odds / (1+odds)"
+  },
+  "credible_interval_note": "先验由文献分层患病率×月尺度恶化系数推导；后验融合队列 z-score",
+  "sequential_update": "",
+  "decision_thresholds": {
+    "gp_consult_recommended": true,
+    "nurse_weekly_npi": true,
+    "caregiver_enhanced_monitoring": true
+  },
+  "gp_actions": [
+    "建议在 D7 前安排精神科/GP 会诊复核，并收紧 NPI 监测频次至每周 2 次",
+    "强化夜间如厕陪护与洗澡防滑流程（与功能衰退亚型一致）"
+  ]
+}

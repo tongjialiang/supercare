@@ -1,10 +1,9 @@
 <div align="center">
 
-# 快速运行指南
 
-**超级「GP-护士-照护员」智能体协同算法**
+# 超级「GP-护士-照护员」智能体协同算法
 
-*项目申报单位：上海爱照护医疗科技有限公司*
+*上海爱照护医疗科技有限公司*
 
 [![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?style=flat-square)](http://corp.tunnel.izhaohu.com:8765/docs)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](.)

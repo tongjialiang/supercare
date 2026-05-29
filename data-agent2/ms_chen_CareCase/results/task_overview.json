@@ -1,0 +1,7 @@
+{
+  "任务描述": "将长者健康智能计算图加工为百炼SFT标准语料",
+  "输入": "/srv/supercare/data-agent1/ms_chen_CareCase/results/ms_chen_CareCase_elder_health_computing_graph.json",
+  "输出": "六份JSONL语料 + 全流程日志 + 详细测试报告",
+  "处理流程": "图谱解析 -> 四层智能体加工 -> 角色化语料生成 -> 质量评估",
+  "主要创新点": "四层可解释链路、证据绑定、角色中枢协同、可追溯日志归档"
+}

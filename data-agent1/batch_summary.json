@@ -1,0 +1,18 @@
+{
+  "batch_start_time": "2026-05-29 19:22:11",
+  "input_path": "/srv/supercare/DataSource/陈女士/ms_chen_CareCase.xlsx",
+  "output_root": "/srv/supercare/data-agent1",
+  "parser_mode": "openpyxl",
+  "file_count": 1,
+  "duration_seconds": 66.87,
+  "results": [
+    {
+      "input_excel_path": "/srv/supercare/DataSource/陈女士/ms_chen_CareCase.xlsx",
+      "case_directory": "/srv/supercare/data-agent1/ms_chen_CareCase",
+      "output_graph_path": "/srv/supercare/data-agent1/ms_chen_CareCase/results/ms_chen_CareCase_elder_health_computing_graph.json",
+      "node_count": 79,
+      "edge_count": 140,
+      "exception_count": 0
+    }
+  ]
+}

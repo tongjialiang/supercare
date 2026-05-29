@@ -1,0 +1,122 @@
+[
+  {
+    "association_id": "ASSOC_STAGE_早期观察",
+    "association_dimension": "阶段关联",
+    "dimension_value": "早期观察",
+    "sample_size": 20,
+    "association_hypothesis": "早期观察阶段中，规范照护与风险稳定下降存在统计正关联。",
+    "supporting_evidence_density": 0,
+    "association_strength": 0.58,
+    "suggested_validation": "在更长观察窗口进行复发率检验。"
+  },
+  {
+    "association_id": "ASSOC_STAGE_中期干预",
+    "association_dimension": "阶段关联",
+    "dimension_value": "中期干预",
+    "sample_size": 31,
+    "association_hypothesis": "中期干预阶段中，规范照护与风险稳定下降存在统计正关联。",
+    "supporting_evidence_density": 1.935,
+    "association_strength": 0.779,
+    "suggested_validation": "在更长观察窗口进行复发率检验。"
+  },
+  {
+    "association_id": "ASSOC_BIZ_003",
+    "association_dimension": "业务类别关联",
+    "dimension_value": "照护服务日志",
+    "sample_size": 14,
+    "association_hypothesis": "照护服务日志相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "supporting_evidence_density": 0.857,
+    "association_strength": 0.615,
+    "suggested_validation": "按周对该类别事件复发率进行统计。"
+  },
+  {
+    "association_id": "ASSOC_BIZ_004",
+    "association_dimension": "业务类别关联",
+    "dimension_value": "异常事件记录",
+    "sample_size": 8,
+    "association_hypothesis": "异常事件记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "supporting_evidence_density": 0,
+    "association_strength": 0.508,
+    "suggested_validation": "按周对该类别事件复发率进行统计。"
+  },
+  {
+    "association_id": "ASSOC_BIZ_005",
+    "association_dimension": "业务类别关联",
+    "dimension_value": "健康评估记录",
+    "sample_size": 7,
+    "association_hypothesis": "健康评估记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "supporting_evidence_density": 1.714,
+    "association_strength": 0.676,
+    "suggested_validation": "按周对该类别事件复发率进行统计。"
+  },
+  {
+    "association_id": "ASSOC_BIZ_006",
+    "association_dimension": "业务类别关联",
+    "dimension_value": "生命体征记录",
+    "sample_size": 7,
+    "association_hypothesis": "生命体征记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "supporting_evidence_density": 1.714,
+    "association_strength": 0.676,
+    "suggested_validation": "按周对该类别事件复发率进行统计。"
+  },
+  {
+    "association_id": "ASSOC_BIZ_007",
+    "association_dimension": "业务类别关联",
+    "dimension_value": "睡眠情况记录",
+    "sample_size": 7,
+    "association_hypothesis": "睡眠情况记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "supporting_evidence_density": 1.714,
+    "association_strength": 0.676,
+    "suggested_validation": "按周对该类别事件复发率进行统计。"
+  },
+  {
+    "association_id": "ASSOC_BIZ_008",
+    "association_dimension": "业务类别关联",
+    "dimension_value": "服药情况",
+    "sample_size": 7,
+    "association_hypothesis": "服药情况相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "supporting_evidence_density": 1.714,
+    "association_strength": 0.676,
+    "suggested_validation": "按周对该类别事件复发率进行统计。"
+  },
+  {
+    "association_id": "ASSOC_RISK_009",
+    "association_dimension": "风险主题关联",
+    "dimension_value": "安全风险",
+    "sample_size": 6,
+    "association_hypothesis": "围绕安全风险的针对性干预与事件改善之间存在显著正向关联。",
+    "supporting_evidence_density": 0.5,
+    "association_strength": 0.544,
+    "suggested_validation": "结合高风险时段做干预前后对照评估。"
+  },
+  {
+    "association_id": "ASSOC_RISK_010",
+    "association_dimension": "风险主题关联",
+    "dimension_value": "睡眠风险",
+    "sample_size": 11,
+    "association_hypothesis": "围绕睡眠风险的针对性干预与事件改善之间存在显著正向关联。",
+    "supporting_evidence_density": 1.091,
+    "association_strength": 0.635,
+    "suggested_validation": "结合高风险时段做干预前后对照评估。"
+  },
+  {
+    "association_id": "ASSOC_RISK_011",
+    "association_dimension": "风险主题关联",
+    "dimension_value": "用药风险",
+    "sample_size": 13,
+    "association_hypothesis": "围绕用药风险的针对性干预与事件改善之间存在显著正向关联。",
+    "supporting_evidence_density": 0.923,
+    "association_strength": 0.623,
+    "suggested_validation": "结合高风险时段做干预前后对照评估。"
+  },
+  {
+    "association_id": "ASSOC_RISK_012",
+    "association_dimension": "风险主题关联",
+    "dimension_value": "功能退化风险",
+    "sample_size": 13,
+    "association_hypothesis": "围绕功能退化风险的针对性干预与事件改善之间存在显著正向关联。",
+    "supporting_evidence_density": 1.615,
+    "association_strength": 0.706,
+    "suggested_validation": "结合高风险时段做干预前后对照评估。"
+  }
+]

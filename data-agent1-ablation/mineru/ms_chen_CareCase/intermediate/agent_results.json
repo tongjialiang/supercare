@@ -1,0 +1,66 @@
+[
+  {
+    "agent_name": "健康档案智能体",
+    "sheet_name": "健康档案",
+    "status": "success",
+    "duration_seconds": 7.6396,
+    "record_count": 62,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "生命体征记录智能体",
+    "sheet_name": "生命体征记录",
+    "status": "success",
+    "duration_seconds": 7.8488,
+    "record_count": 14567,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "服药情况智能体",
+    "sheet_name": "服药情况",
+    "status": "success",
+    "duration_seconds": 10.6739,
+    "record_count": 14585,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "照护服务日志智能体",
+    "sheet_name": "照护服务日志",
+    "status": "success",
+    "duration_seconds": 11.7306,
+    "record_count": 5827,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "住院记录智能体",
+    "sheet_name": "住院记录",
+    "status": "success",
+    "duration_seconds": 0.0,
+    "record_count": 0,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "健康评估记录智能体",
+    "sheet_name": "健康评估记录",
+    "status": "success",
+    "duration_seconds": 8.8374,
+    "record_count": 1762,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "睡眠情况记录智能体",
+    "sheet_name": "睡眠情况记录",
+    "status": "success",
+    "duration_seconds": 10.9642,
+    "record_count": 512,
+    "message": "处理成功"
+  },
+  {
+    "agent_name": "异常事件记录智能体",
+    "sheet_name": "异常事件记录",
+    "status": "success",
+    "duration_seconds": 11.0214,
+    "record_count": 16,
+    "message": "处理成功"
+  }
+]

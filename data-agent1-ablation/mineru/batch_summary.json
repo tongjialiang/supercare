@@ -1,0 +1,18 @@
+{
+  "batch_start_time": "2026-05-06 15:38:23",
+  "input_path": "/srv/supercare/DataSource/陈女士/ms_chen_CareCase.xlsx",
+  "output_root": "/srv/supercare/data-agent1-ablation/mineru",
+  "parser_mode": "mineru",
+  "file_count": 1,
+  "duration_seconds": 88.476,
+  "results": [
+    {
+      "input_excel_path": "/srv/supercare/DataSource/陈女士/ms_chen_CareCase.xlsx",
+      "case_directory": "/srv/supercare/data-agent1-ablation/mineru/ms_chen_CareCase",
+      "output_graph_path": "/srv/supercare/data-agent1-ablation/mineru/ms_chen_CareCase/results/ms_chen_CareCase_elder_health_computing_graph.json",
+      "node_count": 88,
+      "edge_count": 161,
+      "exception_count": 0
+    }
+  ]
+}

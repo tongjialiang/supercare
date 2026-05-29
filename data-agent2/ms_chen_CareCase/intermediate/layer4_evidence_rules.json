@@ -1,0 +1,110 @@
+[
+  {
+    "rule_id": "RULE_001",
+    "source_association_id": "ASSOC_STAGE_早期观察",
+    "situation": "处于阶段关联-早期观察且监测到功能波动",
+    "behavior": "执行分层巡查 + 异常复评 + 多角色协同记录",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "早期观察阶段中，规范照护与风险稳定下降存在统计正关联。",
+    "confidence_score": 0.58
+  },
+  {
+    "rule_id": "RULE_002",
+    "source_association_id": "ASSOC_STAGE_中期干预",
+    "situation": "处于阶段关联-中期干预且监测到功能波动",
+    "behavior": "执行分层巡查 + 异常复评 + 多角色协同记录",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "中期干预阶段中，规范照护与风险稳定下降存在统计正关联。",
+    "confidence_score": 0.779
+  },
+  {
+    "rule_id": "RULE_003",
+    "source_association_id": "ASSOC_BIZ_003",
+    "situation": "处于业务类别关联-照护服务日志且监测到功能波动",
+    "behavior": "执行标准作业流程校核 + 关键记录双人复核 + 周期回顾",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "照护服务日志相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "confidence_score": 0.615
+  },
+  {
+    "rule_id": "RULE_004",
+    "source_association_id": "ASSOC_BIZ_004",
+    "situation": "处于业务类别关联-异常事件记录且监测到功能波动",
+    "behavior": "执行标准作业流程校核 + 关键记录双人复核 + 周期回顾",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "异常事件记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "confidence_score": 0.508
+  },
+  {
+    "rule_id": "RULE_005",
+    "source_association_id": "ASSOC_BIZ_005",
+    "situation": "处于业务类别关联-健康评估记录且监测到功能波动",
+    "behavior": "执行标准作业流程校核 + 关键记录双人复核 + 周期回顾",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "健康评估记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "confidence_score": 0.676
+  },
+  {
+    "rule_id": "RULE_006",
+    "source_association_id": "ASSOC_BIZ_006",
+    "situation": "处于业务类别关联-生命体征记录且监测到功能波动",
+    "behavior": "执行标准作业流程校核 + 关键记录双人复核 + 周期回顾",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "生命体征记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "confidence_score": 0.676
+  },
+  {
+    "rule_id": "RULE_007",
+    "source_association_id": "ASSOC_BIZ_007",
+    "situation": "处于业务类别关联-睡眠情况记录且监测到功能波动",
+    "behavior": "执行标准作业流程校核 + 关键记录双人复核 + 周期回顾",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "睡眠情况记录相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "confidence_score": 0.676
+  },
+  {
+    "rule_id": "RULE_008",
+    "source_association_id": "ASSOC_BIZ_008",
+    "situation": "处于业务类别关联-服药情况且监测到功能波动",
+    "behavior": "执行标准作业流程校核 + 关键记录双人复核 + 周期回顾",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "服药情况相关行为频次提升后，照护执行一致性增强，异常重复率下降。",
+    "confidence_score": 0.676
+  },
+  {
+    "rule_id": "RULE_009",
+    "source_association_id": "ASSOC_RISK_009",
+    "situation": "处于风险主题关联-安全风险且监测到功能波动",
+    "behavior": "执行高频巡查 + 预警分级 + 异常复评 + 家属同步",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "围绕安全风险的针对性干预与事件改善之间存在显著正向关联。",
+    "confidence_score": 0.544
+  },
+  {
+    "rule_id": "RULE_010",
+    "source_association_id": "ASSOC_RISK_010",
+    "situation": "处于风险主题关联-睡眠风险且监测到功能波动",
+    "behavior": "执行高频巡查 + 预警分级 + 异常复评 + 家属同步",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "围绕睡眠风险的针对性干预与事件改善之间存在显著正向关联。",
+    "confidence_score": 0.635
+  },
+  {
+    "rule_id": "RULE_011",
+    "source_association_id": "ASSOC_RISK_011",
+    "situation": "处于风险主题关联-用药风险且监测到功能波动",
+    "behavior": "执行高频巡查 + 预警分级 + 异常复评 + 家属同步",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "围绕用药风险的针对性干预与事件改善之间存在显著正向关联。",
+    "confidence_score": 0.623
+  },
+  {
+    "rule_id": "RULE_012",
+    "source_association_id": "ASSOC_RISK_012",
+    "situation": "处于风险主题关联-功能退化风险且监测到功能波动",
+    "behavior": "执行高频巡查 + 预警分级 + 异常复评 + 家属同步",
+    "expected_effect": "降低复发风险并提升照护稳定性",
+    "reasoning_basis": "围绕功能退化风险的针对性干预与事件改善之间存在显著正向关联。",
+    "confidence_score": 0.706
+  }
+]

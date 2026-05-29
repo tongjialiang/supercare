@@ -1,0 +1,35 @@
+{
+  "case_name": "ms_chen_CareCase",
+  "input_graph_path": "/srv/supercare/data-agent1/ms_chen_CareCase/results/ms_chen_CareCase_elder_health_computing_graph.json",
+  "case_output_dir": "/srv/supercare/data-agent2/ms_chen_CareCase",
+  "graph_node_count": 88,
+  "graph_edge_count": 161,
+  "behavior_count": 57,
+  "narrative_count": 57,
+  "association_count": 13,
+  "rule_count": 13,
+  "corpus_file_lines": {
+    "super_doctor_with_cot_50.jsonl": 50,
+    "super_doctor_without_cot_50.jsonl": 50,
+    "super_nurse_with_cot_50.jsonl": 50,
+    "super_nurse_without_cot_50.jsonl": 50,
+    "super_caregiver_with_cot_50.jsonl": 50,
+    "super_caregiver_without_cot_50.jsonl": 50
+  },
+  "quality_gain": {
+    "结构化覆盖率提升": 0.7,
+    "证据引用率提升": 0.1967,
+    "因果表达率提升": 0.1833,
+    "四层流程指标": {
+      "结构化覆盖率": 1.0,
+      "证据引用率": 0.3367,
+      "因果表达率": 0.9833
+    },
+    "直接生成指标": {
+      "结构化覆盖率": 0.3,
+      "证据引用率": 0.14,
+      "因果表达率": 0.8
+    }
+  },
+  "duration_seconds": 587.104
+}

@@ -1,4 +1,4 @@
-# Python
+# Python 缓存
 __pycache__/
 *.py[cod]
 *.pyo
@@ -7,21 +7,12 @@ __pycache__/
 .venv/
 venv/
 
-# 运行产物与缓存（体积大，可本地重新生成）
-data-agent1/
-data-agent1-ablation/
-data-agent2/
+# 运行时临时文件（非项目内容）
 logs/
 .quickstart_jobs/
 .quickstart_api.pid
-
-# 本地文档与重复素材
-*.docx
 Untitled
-/docs/images/
-/assets/fonts_pkg/
-图*.png
 
-# 敏感配置（仓库内保留 config/data_agent1_config.json 模板，api_key 留空）
+# 敏感配置
 .env
 *.local.json

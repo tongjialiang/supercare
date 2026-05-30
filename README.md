@@ -36,7 +36,7 @@
 
 <div align="center">
 
-[![应用场景-认知症 BPSD 患者住院后返回照护机构全流程](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/bilibili_scenario1_cover.jpg)](https://www.bilibili.com/video/BV1edVG68EJJ)
+[![应用场景-认知症 BPSD 患者住院后返回照护机构全流程](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/bilibili_scenario1_cover.png)](https://www.bilibili.com/video/BV1edVG68EJJ)
 
 **[▶ 点击在 B 站观看完整演示视频](https://www.bilibili.com/video/BV1edVG68EJJ)**
 

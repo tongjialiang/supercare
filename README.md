@@ -40,7 +40,7 @@
   <img src="https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/bilibili_scenario1_cover.png" alt="应用场景-认知症 BPSD 患者住院后返回照护机构全流程" width="100%">
 </a>
 
-**[▶ 点击播放 B 站演示视频](https://www.bilibili.com/video/BV1edVG68EJJ)** · **[查看高清架构图原图](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/bilibili_scenario1_cover.png)**
+**[▶ 点击播放 B 站演示视频](https://www.bilibili.com/video/BV1edVG68EJJ)**
 
 </div>
 
@@ -199,7 +199,7 @@ bash scripts/stop_quickstart_api.sh     # 停止
 **示例数据（已内置）：**
 
 - Excel：`DataSource/陈女士/ms_chen_CareCase.xlsx`
-- 数据队列：`DataSource/` 下 10 例机构病例
+- 数据队列：`DataSource/` 下 10 例机构病例（已去隐私处理）
 
 ### 2.4 命令行逐步运行（无 API）
 

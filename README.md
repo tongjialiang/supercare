@@ -1,5 +1,10 @@
 <div align="center">
 
+<video src="https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/scenario1_bpsd_return_care_flow.mp4" controls width="100%"></video>
+
+**场景一：认知症 BPSD 患者住院后返回照护机构全流程**
+
+<br>
 
 # 超级「GP-护士-照护员」智能体协同算法
 
@@ -54,22 +59,6 @@
 > 依托超级「GP-护士-照护员」智能体协同算法，完成五类养老照护典型场景应用演示，包括 BPSD 患者住院后返回照护机构全流程、制定照护计划到执行全闭环、照护任务执行与质控、Dashboard 可视化管理、照护成效管理等，有效验证了所提方案的通用性与落地价值，能够显著提升养老照护的精细化与智能化水平。
 
 **四大模块：** 长者智能计算图 DataAgent → 三超循证知识基座 DataAgent → 序贯分期与贝叶斯风险融合推断算法 → 超级「GP-护士-照护员」智能体协同算法。
-
-<div align="center">
-
-### 图 1　BPSD 返院/返机构全周期闭环智能体工作流（协同层架构）
-
-![图1：BPSD返院全周期闭环智能体工作流](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/fig1.png)
-
-### 图 2　疾病进展曲线与分期对比（推断层：序贯分期 + MCMC，示例病例：陈女士）
-
-![图2：疾病进展曲线与分期对比](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/fig2.png)
-
-### 图 3　计算工作流（数据层 → 推断层 → 工具层 → 协同智能体）
-
-![图3：计算工作流](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/fig3.png)
-
-</div>
 
 ---
 

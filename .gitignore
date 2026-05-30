@@ -12,6 +12,7 @@ logs/
 .quickstart_jobs/
 .quickstart_api.pid
 Untitled
+demo_video/
 
 # 敏感配置
 .env

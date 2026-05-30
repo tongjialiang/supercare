@@ -1,12 +1,5 @@
 <div align="center">
 
-[![场景一：认知症 BPSD 患者住院后返回照护机构全流程](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/scenario1_preview.gif)](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/scenario1_bpsd_return_care_flow.mp4)
-
-**场景一：认知症 BPSD 患者住院后返回照护机构全流程**  
-*点击上方预览图，在新标签页播放完整演示视频（约 4 分钟）*
-
-<br>
-
 # 超级「GP-护士-照护员」智能体协同算法
 
 *上海爱照护医疗科技有限公司*
@@ -38,6 +31,14 @@
 ---
 
 ## 项目概述
+
+<div align="center">
+
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116662216950518&bvid=BV1edVG68EJJ&cid=38717556301&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="480"></iframe>
+
+**场景一：认知症 BPSD 患者住院后返回照护机构全流程** · [B站外链](https://www.bilibili.com/video/BV1edVG68EJJ)
+
+</div>
 
 提出一套面向养老照护场景、以「**数据—知识—推断—协同**」四层贯通架构为核心的全链路智能体解决方案。以长期照护「证据+判断」双轮驱动为总体方法，构建覆盖「基态—触发—就医—返回」全周期的智能照护闭环。
 

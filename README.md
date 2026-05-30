@@ -32,11 +32,13 @@
 
 ## 项目概述
 
+### 应用场景-认知症 BPSD 患者住院后返回照护机构全流程
+
 <div align="center">
 
-<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116662216950518&bvid=BV1edVG68EJJ&cid=38717556301&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="480"></iframe>
+[![应用场景-认知症 BPSD 患者住院后返回照护机构全流程](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/bilibili_scenario1_cover.jpg)](https://www.bilibili.com/video/BV1edVG68EJJ)
 
-**场景一：认知症 BPSD 患者住院后返回照护机构全流程** · [B站外链](https://www.bilibili.com/video/BV1edVG68EJJ)
+**[▶ 点击在 B 站观看完整演示视频](https://www.bilibili.com/video/BV1edVG68EJJ)**
 
 </div>
 

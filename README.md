@@ -1,8 +1,9 @@
 <div align="center">
 
-<video src="https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/scenario1_bpsd_return_care_flow.mp4" controls width="100%"></video>
+[![场景一：认知症 BPSD 患者住院后返回照护机构全流程](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/scenario1_preview.gif)](https://raw.githubusercontent.com/tongjialiang/supercare/main/assets/scenario1_bpsd_return_care_flow.mp4)
 
-**场景一：认知症 BPSD 患者住院后返回照护机构全流程**
+**场景一：认知症 BPSD 患者住院后返回照护机构全流程**  
+*点击上方预览图，在新标签页播放完整演示视频（约 4 分钟）*
 
 <br>
 
